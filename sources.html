@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_files/style.css">
+    <script defer src="js_files/index.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <title>Źródła</title>
+</head>
+<body onload="applyStoredColor()"> 
+    <h1> Historia Komputerów </h1>
+    <hr>
+    <div class="nav"> 
+        <a href="index.html"> Strona Główna </a>
+        <a href="programers.html"> Wybitni Naukowcy </a>
+        <a href="comp_types.html"> Typy komputerów </a>
+        <a href="sources.html"> Źródła </a>
+    </div>
+    <hr>
+    <div class="container"> 
+        <div class="quote-container">
+            <div class="quote">
+                <h4> Cytaty o Informatyce</h4>
+                <div class="quote-item">
+                    <h5> Albert Einstein </h5>
+                    <p> "Boję się dnia, w którym technologia przewyższy nasze ludzkie interakcje. Świat będzie wtedy miał generację idiotów" </p>
+                </div>
+        
+                <div class="quote-item">
+                    <h5> Nikola Tesla </h5>
+                    <p> "Wkrótce będzie możliwe bezprzewodowe wysyłanie informacji na cały świat, tak, że każdy człowiek będzie mógł to robić przy pomocy małego urządzenia noszonego przy sobie"</p>
+                </div>
+        
+                <div class="quote-item">
+                    <h5> Mitchell Kapor </h5>
+                    <p> "Pozyskiwanie informacji z internetu jest jak picie z hydrantu przeciwpożarowego" </p>
+                </div>
+        
+                <div class="quote-item">
+                    <h5> Rollo May </h5>
+                    <p> "Technologia to sztuka takiego aranżowania świata, żebyśmy go nie doświadczali" </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="myJavaScript" id="hideThisFromNonJs" style="display:none">
+            <h4> Dodaj swój własny cytat: </h4> 
+            <p> 
+                <h5> Autor</h5>
+                <label for="fname">Nazwisko:</label>
+                <input type="text" id="fname" name="fname" required="required"><br>
+        
+                <label for="lname">Imię:</label>
+                <input type="text" id="lname" name="lname"><br>
+                
+                <h5> Cytat</h5>
+                <p contenteditable="true" id="UserDesc" >Wprowadz cytat ...</p>
+        
+                <input type="button" onclick="AddPerson()" value="Dodaj swój cytat na stronę !"> <br> <br>
+        
+            </p>
+            <hr>
+            <h4> Personalizacja witryny: </h4> 
+            <div> 
+                <label for="favcolor"> Wybierz kolor przewodni strony: </label>
+                <input type="color" id="favcolor" name="favcolor">
+                <input type="button" onclick="koloruj()" value="Zastosuj kolor">
+
+                <button id="toggle">Tryb ciemny</button>
+            
+            </div>
+        </div>
+        <h4> Źródła: </h4> 
+        <ol >
+            <li> <a href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"> Wikipedia </a> </li>
+            <li> <a href="https://moja.pg.edu.pl/"> MojaPG </a> </li>
+            <li> <a href="https://en.cppreference.com/w/"> C++ reference </a> </li>
+        </ol>
+        <div class="footer"> Moje Hobby, Projekt Etap 1, Hipertekst i Hipermedia, Jan Krupiniewicz </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('hideThisFromNonJs').style.display='block';
+    </script>
+</body>
+</html>

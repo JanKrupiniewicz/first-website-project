@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_files/style.css" type="text/css">
+    <script defer src="js_files/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+
+    <title>Historia Komputerów</title>
+</head>
+<body onload="applyStoredColor()"> 
+    <h1> Historia Komputerów </h1>
+    <hr>
+    <div class="nav"> 
+        <a href="index.html"> Strona Główna </a>
+        <a href="programers.html"> Wybitni Naukowcy </a>
+        <a href="comp_types.html"> Typy komputerów </a>
+        <a href="sources.html"> Źródła </a>
+    </div>
+    <hr>
+    <div class="container"> 
+        <div class="content"> 
+            <div class="image-container">
+                <img src="images/turing_machine.avif" height="200" class="bordered-image">
+                <img src="images/pc_1.jpg" height="200" class="bordered-image">
+                <img src="images/pc_2.jpg" height="200" class="bordered-image">
+                <img src="images/pc_3.jpg" height="200" class="bordered-image">
+                <img src="images/pc_4.jpg" height="200" class="bordered-image">
+            </div>
+            <hr>
+            <h4> Krótka Historia</h4>
+            <p> Komputer to elektroniczna maszyna cyfrowa, maszyna matematyczna maszyna przeznaczona
+                 do przetwarzania informacji, które da się zapisać w formie ciągu cyfr albo sygnału 
+                 ciągłego. Maszyna roku tygodnika „Time” w 1982 roku.
+            </p>    
+            <p>
+                Mimo że mechaniczne maszyny liczące istniały od wielu stuleci, komputery w sensie 
+                współczesnym pojawiły się dopiero w połowie XX wieku, gdy zbudowano pierwsze komputery 
+                elektroniczne. Miały one rozmiary sporych pomieszczeń i zużywały kilkaset razy więcej 
+                energii niż współczesne komputery osobiste (PC), a jednocześnie miały miliardy razy 
+                mniejszą moc obliczeniową. Współcześnie są prowadzone także badania nad komputerami 
+                biologicznymi i optycznymi.
+            </p>
+            <p>
+                Małe komputery mogą zmieścić się nawet w zegarku i są zasilane baterią. 
+                Komputery osobiste stały się symbolem ery informatycznej. Najliczniejszymi 
+                maszynami liczącymi są systemy wbudowane sterujące najróżniejszymi urządzeniami 
+                od odtwarzaczy MP3 i zabawek po roboty przemysłowe.
+                Na mojej stronie postaram sie przedstawić historię komputerów.
+            </p>
+            <hr>
+            <form action="odbierz.php" method="POST" id="myForm">
+                <h4> Ankieta dla Użytkownika </h4>
+                <h5> Informacje o tobie: </h5>
+                <label for="fname">Pierwsze imię:</label>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <label for="lname">Nazwisko:</label>
+                <input type="text" id="lname" name="lname" required>
+                <br>
+                <label for="bdate">Data urodzenia:</label>
+                <input type="date" id="bdate" name="bdate">
+                <br>
+              
+                <label><h5>Uwagi do strony:</h5></label>
+              
+                <label>Podoba się tobie strona:</label>
+                <input type="radio" name="opinion" value="yes">
+                <label for="yes">TAK</label>
+                <input type="radio" name="opinion" value="no">
+                <label for="no">NIE</label>
+                <br>
+              
+                <label for="moreinfo">Jaki temat najbardziej cię zainteresował?</label>
+                <select id="moreinfo" name="moreinfo">
+                  <option value="Typy komputerów">Typy komputerów</option>
+                  <option value="Podstawowe elementy komputera">Podstawowe elementy komputera</option>
+                  <option value="Programowalność">Programowalność</option>
+                  <option value="Komputery analogowe">Komputery analogowe</option>
+                  <option value="Pierwsze maszyny liczące">Pierwsze maszyny liczące</option>
+                </select>
+                <br>
+              
+                <label for="userInput">Jak według ciebie komputery będą wyglądać za 20 lat?</label>
+                <input type="text" id="userInput" name="userInput" size="30">
+                <br><br>
+              
+                <input type="reset">
+                <input type="submit">
+              </form>
+              
+        </div>
+        <div class="footer"> Moje Hobby, Projekt Etap 1, Hipertekst i Hipermedia, Jan Krupiniewicz </div>
+    </div>
+</body>
+</html>

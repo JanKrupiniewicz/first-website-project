@@ -1,0 +1,117 @@
+body {
+    background-color: lightgrey;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: 24px;
+    color: black;
+}
+
+.nav {
+    background-color: rgb(24, 24, 24);
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    box-sizing: 1px;
+    padding: 3px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.nav a:hover {
+    color:rgb(166, 166, 247);
+    transition: text-decoration 0.3s ease;
+}
+
+.footer {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+}
+
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    margin-right: 20px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.bordered-image {
+    border: 2px solid #000;
+}
+
+.bordered-image:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    text-align: center; 
+}
+
+.image-container img {
+    display: inline-block; 
+    border-radius: 10px;
+    margin: 10px; 
+}
+
+h1 {
+    background-color: rgb(166, 166, 247);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+h4, h5 {
+    text-align: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-item {
+    background-color: black;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.quote-item:hover {
+    background-color: rgb(166, 166, 247);
+    color: black;
+    transform: scale(1.01);
+}
+
+.quote-item p {
+    transform: skewX(-15deg);
+}
+
+.dark-theme {
+    background-color: rgb(31, 37, 46);
+    color: white;
+}
+
+.dark-theme h2, h3, h4 {
+    color: white;
+}
